@@ -1,0 +1,8 @@
+/* COLORS */
+:root {
+  --example-color: #fff;
+}
+
+.using-example {
+  color: var(--example-color);
+}

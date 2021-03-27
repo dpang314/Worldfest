@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    block vars
+    block meta 
+      meta(charset='UTF-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    block styles
+      link(rel='stylesheet', href='/styles/main.css')
+    block scripts
+    title #{title}
+  body
+    block header
+      include nav.pug
+    block content
+    block footer
+      include footer.pug
