@@ -1,0 +1,84 @@
+.background {
+  background-color: #CCFFCC;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.content {
+  margin-top: 5rem;
+}
+nav > a > img {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+}
+
+nav a {
+  margin-top: 0.25rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* nav ul {
+  position: absolute;
+  right: 2rem;
+} */
+nav > ul > li {
+  border: 0.25rem solid transparent;
+}
+nav > ul > li > a {
+  font-size: 1.5rem;
+}
+
+.navTransparent {
+    transition-duration: 0.5s;
+    background-color: transparent;
+}
+.navTransparent > ul > li:hover {
+    transition-duration: 0.5s;
+    border-radius: 1rem;
+    border: 0.25rem solid #bbddff;
+}
+.navTransparent > ul > li > a {
+    transition-duration: 0.5s;
+    color: #3d7bff;
+}
+
+.navColor {
+    transition-duration: 0.5s;
+    background-color: #bbddff;
+}
+.navColor > ul > li:hover {
+  transition-duration: 0.5s;
+  border-radius: 1rem;
+  border: 0.25rem solid #CCFFCC;
+}
+.navColor > ul > li > a {
+    transition-duration: 0.5s;
+    color: #338833;
+}
+.box {
+  padding-left: 10%;
+  padding-top: 6.5%;
+  padding-bottom: 6.5%;
+  padding-right: 7.5%;
+  width: 100%;
+}
+.box > img {
+  width: 45%;
+  /* margin-left: 10%;
+  margin-top: 6.5%; */
+}
+.datetime {
+  padding-top: 10%;
+  float: right;
+}
+.date {
+  color: #f07f7f;
+  font-size: 4.5rem;
+}
+.misc {
+  color: #5f8dd3;
+  font-size: 2rem;
+}
