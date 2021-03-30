@@ -82,3 +82,37 @@ nav > ul > li > a {
   color: #5f8dd3;
   font-size: 2rem;
 }
+
+.register-box {
+  padding-top: 10%;
+  max-width: 2400px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0 auto;
+}
+
+.register-description {
+  width: 65%;
+  margin-right: 10%;
+  text-align: left;
+  float: left;
+}
+
+#register-date {
+  color: #f07f7f;
+  font-size: 4.5rem;
+}
+
+#register-time {
+  color: #5f8dd3;
+  font-size: 2rem;
+}
+
+#register-location {
+  color: white;
+  font-size: 2rem;
+}
+#register-cost {
+  color: white;
+  font-size: 2rem;
+}
