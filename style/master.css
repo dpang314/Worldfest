@@ -20,10 +20,6 @@ nav a {
   margin-right: 2rem;
 }
 
-/* nav ul {
-  position: absolute;
-  right: 2rem;
-} */
 nav > ul > li {
   border: 0.25rem solid transparent;
 }
@@ -67,8 +63,6 @@ nav > ul > li > a {
 }
 .box > img {
   width: 45%;
-  /* margin-left: 10%;
-  margin-top: 6.5%; */
 }
 .datetime {
   padding-top: 10%;
@@ -90,14 +84,97 @@ nav > ul > li > a {
   padding-right: 10%;
   margin: 0 auto;
 }
-
 .register-description {
   width: 65%;
   margin-right: 10%;
   text-align: left;
   float: left;
 }
+.carousel {
+  width:85%;
+  border-radius: 3rem;
+  background-color: grey;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40rem;
+  width: auto;
+  object-fit: contain;
+}
+.carousel-item video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40rem;
+  width: auto;
+  object-fit: contain;
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  background-color: rgba(0,0,0,0);
+  border-radius: 3rem;
+  pointer-events: auto;
+}
+
+.overlay:hover {
+  opacity:1;
+  background-color: rgba(0,0,0,0.85);
+}
+
+.overlay-vid {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom:auto;
+  height: 90%;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  background-color: rgba(0,0,0,0);
+  border-radius: 3rem;
+  pointer-events: auto;
+}
+
+.overlay-vid:hover {
+  opacity:1;
+  background-color: rgba(0,0,0,0.85);
+}
+.text {
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.carousel-control-prev {
+  height: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.carousel-control-next {
+  height: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 #register-date {
   color: #f07f7f;
   font-size: 4.5rem;
