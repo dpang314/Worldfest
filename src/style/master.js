@@ -1,4 +1,3 @@
-console.log("lll");
 $(document).ready(function (){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
@@ -11,4 +10,4 @@ $(document).ready(function (){
             $("nav").addClass("navTransparent");
         }
     })
-})
+});
