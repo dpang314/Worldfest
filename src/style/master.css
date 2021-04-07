@@ -243,6 +243,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
     display: flex;
   }
   .about-column {
+    margin-left: 5rem;
     flex: 50%;
   }
 }
@@ -252,7 +253,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 }
 
 .about-right-column {
-  margin-left: 5rem;
+  
   padding-top: 2rem;
 }
 .about-grid-wrapper {
