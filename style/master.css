@@ -1,5 +1,12 @@
 .background {
-  background-color: #CCFFCC;
+  background-image: url('../media/background.png');
+}
+
+@media (min-width: 1200px) {
+  .background {
+    /* Get rid of if we change to a repeatable design */
+    background-size: cover;
+  }
 }
 
 .content {
