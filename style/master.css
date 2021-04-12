@@ -1,6 +1,6 @@
 .background {
   background-image: url('../media/background.svg');
-  background-size: 1000px auto;
+  background-size: 2000px auto;
 }
 
 .content {
@@ -45,11 +45,11 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .navColor > .container-fluid > #navbarSupportedContent > ul > li:hover {
   transition-duration: 0.5s;
   border-radius: 1rem;
-  border: 0.25rem solid #CCFFCC;
+  border: 0.25rem solid white;
 }
 .navColor > .container-fluid > #navbarSupportedContent > ul > li > a {
     transition-duration: 0.5s;
-    color: #338833;
+    color: white;
 }
 .box {
   padding-left: 10%;
