@@ -283,14 +283,14 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 }
 
 .about-item {
-  position: relative;
+  height: 10rem;
+  display: flex;
   justify-content: center;
   justify-self: center;
   width: 100%;
 }
 
 .about-item > a {
-  height: 13rem;
   display: flex;
   justify-content: center;
 }
@@ -305,13 +305,13 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .about-button {
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
 .about-button > a {
-  height: 13rem;
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .about-button > a > button {
@@ -323,7 +323,8 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   transition: width 0.25s, height 0.25s;
   padding-left: 1rem;
   padding-bottom: 3rem;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .about-item:hover > .about-button > a > button {
@@ -334,13 +335,10 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .about-info {
   color: white;
   width: 80%;
-  top: 0.5rem;
-  left: 10%;
 }
 
 .about-info > p {
   font-size: 1.25rem;
-  display: block;
 }
 
 .about-full {
@@ -356,6 +354,4 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .about-info-full {
   color: white;
   width: 80%;
-  top: 25%;
-  left: 10%;
 }
