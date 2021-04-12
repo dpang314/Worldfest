@@ -1,12 +1,6 @@
 .background {
-  background-image: url('../media/background.png');
-}
-
-@media (min-width: 1200px) {
-  .background {
-    /* Get rid of if we change to a repeatable design */
-    background-size: cover;
-  }
+  background-image: url('../media/background.svg');
+  background-size: 1000px auto;
 }
 
 .content {
