@@ -76,6 +76,8 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .box > .datetime > .date {
     font-size: 2.5rem;
