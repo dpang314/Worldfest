@@ -28,7 +28,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .navTransparent > .container-fluid > #navbarSupportedContent > ul > li:hover {
     transition-duration: 0.5s;
     border-radius: 1rem;
-    border: 0.25rem solid #bbddff;
+    border: 0.25rem solid #3d7bff;
 }
 .navTransparent > .container-fluid > #navbarSupportedContent > ul > li > a {
     transition-duration: 0.5s;
@@ -37,7 +37,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 
 .navColor {
     transition-duration: 0.5s;
-    background-color: #bbddff;
+    background-color: #3d7bff;
 }
 .navColor > .container-fluid > #navbarSupportedContent > ul > li:hover {
   transition-duration: 0.5s;
@@ -255,29 +255,43 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 }
 
 .about-right-column {
-  
   padding-top: 2rem;
 }
+
+.about-grid-title {
+  text-align: center;
+}
+
+.about-grid-description {
+  text-align: center;
+}
+
 .about-grid-wrapper {
   display: flex;
   justify-content: center;
 }
+
 .about-grid {
-  margin-top: 5rem;
+  margin-top: 1rem;
   flex: 1;
   max-width: 1500px;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  grid-auto-rows: minmax(13rem, auto);
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 @media (min-width: 1200px) {
   .about-grid {
     display: grid;
     grid-template-columns: 10rem 1fr 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    grid-template-rows: 3rem; /* First row is for column titles */
+    grid-auto-rows: minmax(13rem, auto);
+    column-gap: 0.5vw;
+    row-gap: 0.5vw;
   }
+}
+
+.about-column-title {
+  text-align: center;
 }
 
 .about-title {
