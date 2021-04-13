@@ -71,6 +71,10 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   font-size: 2rem;
 }
 
+.gallery-title {
+  text-align: center;
+}
+
 .carousel {
   width:85%;
   border-radius: 3rem;
@@ -264,6 +268,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   max-width: 1500px;
   margin-left: 2rem;
   margin-right: 2rem;
+  grid-auto-rows: minmax(13rem, auto);
 }
 
 @media (min-width: 1200px) {
@@ -276,25 +281,51 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 }
 
 .about-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: fit-content;
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .about-title {
+    text-align: center;
+  }
+}
+
 .about-item {
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  justify-self: center;
   width: 100%;
 }
 
 .about-item > a {
-  display: flex;
-  justify-content: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  /* Disables link until we know what the url will be */
+  pointer-events: none;
+  cursor: default;
 }
 
+@media (max-width: 1200px) {
+  .about-title > a {
+    grid-auto-rows: auto;
+  }
+}
+
+.about-item > a:link {
+  text-decoration: none;
+}
+
+.about-item > a:visited {
+  text-decoration: none;
+}
+
+.about-item > a:hover {
+  text-decoration: none;
+}
+
+.about-item > a:active {
+  text-decoration: none;
+}
 
 @media (max-width: 1200px) {
   .about-title {
@@ -303,18 +334,20 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 }
 
 .about-button {
+  grid-column: 1;
+  grid-row: 1;
   width: 100%;
   height: 100%;
 }
 
-.about-button > a {
+.about-button {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
 }
 
-.about-button > a > button {
+.about-button > button {
   width: 90%;
   height: 90%;
   border: none;
@@ -327,14 +360,22 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   justify-content: center;
 }
 
-.about-item:hover > .about-button > a > button {
+.about-item:hover > a > .about-button > button {
   width: 95%;
   height: 95%;
 }
 
 .about-info {
+  padding: 2.5% 10% 10% 10%;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1;
+  top: 0;
+  z-index: 1;
   color: white;
-  width: 80%;
+  width: 100%;
 }
 
 .about-info > p {
@@ -342,16 +383,30 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 }
 
 .about-full {
-  align-content: center;
   grid-column-start: span 3;
   text-align: center;
 }
 
 .about-info-full > p {
   font-size: 1.25rem;
+  
 }
 
 .about-info-full {
+  padding: 2.5% 10% 0% 10%;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1;
+  top: 0;
+  z-index: 1;
   color: white;
-  width: 80%;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .about-info-full {
+    padding-bottom: 5%;
+  }
 }
