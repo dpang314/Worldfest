@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+
 .background {
   background-image: url('../media/background.svg');
   background-size: 2000px auto;
+  font-family: 'Manjari', sans-serif;
 }
 
 nav > .container-fluid > a > img {
@@ -28,7 +31,8 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .navTransparent > .container-fluid > #navbarSupportedContent > ul > li:hover {
     transition-duration: 0.5s;
     border-radius: 1rem;
-    border: 0.25rem solid #3d7bff;
+    border: 0.25rem solid #c6d5ec;
+    background-color: #f2f2f2;
 }
 .navTransparent > .container-fluid > #navbarSupportedContent > ul > li > a {
     transition-duration: 0.5s;
@@ -37,16 +41,21 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 
 .navColor {
     transition-duration: 0.5s;
-    background-color: #3d7bff;
+    background-color: #c6d5ec;
+    border-radius: 0rem 0rem 2rem 2rem;
 }
 .navColor > .container-fluid > #navbarSupportedContent > ul > li:hover {
   transition-duration: 0.5s;
   border-radius: 1rem;
   border: 0.25rem solid white;
+  background-color: #d7e3f4;
 }
 .navColor > .container-fluid > #navbarSupportedContent > ul > li > a {
     transition-duration: 0.5s;
     color: white;
+}
+.content {
+  margin-top: 3rem;
 }
 .box {
   padding-left: 10%;
@@ -62,7 +71,27 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   padding-top: 10%;
   float: right;
 }
-
+.about-image {
+  border-radius: 2rem;
+}
+.about-info {
+  margin-top: 1.5rem;
+}
+.about-info-full {
+  margin-top: 4rem;
+}
+.about-text {
+  border: 1rem solid #e5e5e5;
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.about-text p {
+  font-size: 1.05rem;
+}
+#gallery_carousel {
+  margin-bottom: 5rem;
+}
 @media (max-width: 1200px) {
   .box > .datetime {
     float: none;
@@ -374,7 +403,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   width: 90%;
   height: 90%;
   border: none;
-  border-radius: 1rem;
+  border-radius: 2rem 0rem 2rem 0rem;
   transition: width 0.25s, height 0.25s;
   padding-left: 1rem;
   padding-bottom: 3rem;
