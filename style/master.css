@@ -86,6 +86,12 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   border-radius: 2rem;
   padding: 2rem;
 }
+@media (max-width: 1200px) {
+  .about-right-column > .about-text {
+    padding: 1rem;
+  }
+}
+
 .about-text p {
   font-size: 1.05rem;
 }
@@ -220,8 +226,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 
 .about-box {
   max-width: 2000px;
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 90%;
   margin: 0 auto;
   height: fit-content;
 }
@@ -245,7 +250,6 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   }
 }
 
-
 .about-image {
   width: 100%;
   max-height: 50vh;
@@ -255,6 +259,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   height: 100%;
   object-position: 50% 40%;
 }
+
 .about-main-title {
   color: #f07f7f;
   font-size: 3rem;
@@ -291,8 +296,6 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   margin-top: 1rem;
   flex: 1;
   max-width: 1500px;
-  margin-left: 10vw;
-  margin-right: 10vw;
 }
 
 @media (min-width: 1200px) {
@@ -304,6 +307,8 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
     justify-items: center;
     align-items: center;
     grid-auto-rows: minmax(10rem, auto) 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 }
 
