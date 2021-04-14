@@ -262,6 +262,12 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   height: fit-content;
 }
 
+@media (max-width: 1200px) {
+  .about-main-title {
+    padding-top: 2rem;
+  }
+}
+
 
 .about-description {
   font-size: 1.1rem;
@@ -456,7 +462,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 }
 
 .about-info-full > p {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .about-info-full {
