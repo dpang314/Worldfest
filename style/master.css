@@ -81,9 +81,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .about-info {
   margin-top: 1.5rem;
 }
-.about-info-full {
-  margin-top: 4rem;
-}
+
 .about-text {
   border: 1rem solid #e5e5e5;
   background-color: #f2f2f2;
@@ -478,6 +476,17 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .about-full {
   grid-column-start: span 3;
   text-align: center;
+  width: 100%;
+  height: 90%;
+}
+
+.about-full > a > .about-button > button {
+  width: 97%;
+}
+
+.about-full:hover > a > .about-button > button {
+  width: 99%;
+  height: 95%;
 }
 
 .about-info-full > p {
@@ -485,25 +494,55 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 }
 
 .about-info-full {
-  padding: 2.5% 10% 0% 10%;
   display: flex;
   justify-items: center;
+  align-items: self;
   flex-direction: column;
   grid-column: 1;
   grid-row: 1;
-  top: 0;
   z-index: 1;
   color: white;
   width: 100%;
+  padding-top: 4rem;
+    padding-bottom: 3rem;
 }
 
-.about-full > a > .about-info-full {
-  display: flex;
-  align-self: center;
+.about-full > a {
+  height: 100%;
+  /* Disables link until we know what the url will be */
+  pointer-events: none;
+  cursor: default;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.about-full > a:link {
+  text-decoration: none;
+}
+
+.about-full > a:visited {
+  text-decoration: none;
+}
+
+.about-full > a:hover {
+  text-decoration: none;
+}
+
+.about-full > a:active {
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
-  .about-info-full {
-    padding-bottom: 5%;
+  .about-full {
+    height: fit-content;
+  }
+  .about-full > a > .about-button > button {
+    width: 90%;
+    height: 90%;
+  }
+  .about-full:hover > a > .about-button > button {
+    width: 95%;
   }
 }
