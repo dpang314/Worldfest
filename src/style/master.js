@@ -9,5 +9,14 @@ $(document).ready(function (){
             $("nav").removeClass("navColor");
             $("nav").addClass("navTransparent");
         }
-    })
+    });
+    $("#trailer-modal").on('hide.bs.modal', function (event) {
+        $('.trailer').trigger('pause');
+    });
+    $('.carousel-control-next').click(function() {
+        $(".trailer").each(function () { this.pause() });
+    });
+    $('.carousel-control-prev').click(function() {
+        $(".trailer").each(function () { this.pause() });
+    });
 });

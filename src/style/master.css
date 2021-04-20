@@ -75,6 +75,101 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   padding-top: 10%;
   float: right;
 }
+
+@media (max-width: 1200px) {
+  #trailer-open {
+    margin: 0 auto;
+  }
+}
+
+.modal-body {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#home-modal-content {
+  border: none;
+  background-color: transparent;
+}
+
+#home-carousel > .carousel-inner {
+  border: none;
+  border-radius: 1.5rem;
+}
+
+#modal-close {
+  position: absolute;
+  right: 2.5%;
+  top: 2.5%;
+}
+
+#trailer-open {
+  color: white;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1.25rem;
+  width: fit-content;
+  border: none;
+  background-color: #3d7bff;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+
+#trailer-open > p {
+  margin-bottom: 0;
+  height: fit-content;
+}
+
+#trailer-open {
+  transition: all 0.5s ease;
+}
+
+#trailer-open:hover {
+  transform: scale(1.1);
+}
+
+.home-video-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.trailer {
+  max-height: 70vh;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home-carousel {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home-carousel > .carousel-control-prev {
+  height: fit-content;
+  margin: auto 0;
+}
+
+#home-carousel > .carousel-control-next {
+  height: fit-content;
+  margin: auto 0;
+}
+
+#trailer-icon {
+  height: 3rem;
+  filter: invert(1);
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
 .about-image {
   border-radius: 2rem;
 }
@@ -150,14 +245,14 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   }
 }
 
-.carousel {
+#gallery_carousel {
   width:85%;
   border-radius: 3rem;
   background-color: grey;
   margin-left: auto;
   margin-right: auto;
 }
-.carousel-item img {
+#gallery_carousel img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -165,7 +260,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   width: auto;
   object-fit: contain;
 }
-.carousel-item video {
+#gallery_carousel video {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -225,12 +320,12 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.carousel-control-prev {
+#gallery_carousel {
   height: 20%;
   margin-top: auto;
   margin-bottom: auto;
 }
-.carousel-control-next {
+#gallery_carousel {
   height: 20%;
   margin-top: auto;
   margin-bottom: auto;
