@@ -126,11 +126,15 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 }
 
 #trailer-open {
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.05); /* Otherwise leaves behind lines on scale */
 }
 
 #trailer-open:hover {
-  transform: scale(1.1);
+  -webkit-transform: translateZ(0);
+  transform: scale(1.1) rotate(0.01deg);
 }
 
 .home-video-wrapper {
