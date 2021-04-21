@@ -196,9 +196,27 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .about-text p {
   font-size: 1.05rem;
 }
-#gallery_carousel {
+
+.gallery-carousel {
+  margin-bottom: 2rem;
+}
+
+#gallery_carousel_2020 {
   margin-bottom: 5rem;
 }
+
+
+.gallery-carousel > .carousel-control-prev {
+  height: fit-content;
+  margin: auto 0;
+}
+
+.gallery-carousel > .carousel-control-next {
+  height: fit-content;
+  margin: auto 0;
+}
+
+
 @media (max-width: 1200px) {
   .box > .datetime {
     float: none;
@@ -241,6 +259,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   text-align: center;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 1200px) {
@@ -249,14 +268,15 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   }
 }
 
-#gallery_carousel {
+.gallery-carousel {
   width:85%;
+  max-width: 1600px;
   border-radius: 3rem;
   background-color: grey;
   margin-left: auto;
   margin-right: auto;
 }
-#gallery_carousel img {
+.gallery-carousel img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -264,7 +284,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   width: auto;
   object-fit: contain;
 }
-#gallery_carousel video {
+.gallery-carousel video {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -285,10 +305,10 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   opacity:0;
   background-color: rgba(0,0,0,0);
   border-radius: 3rem;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
-.overlay:hover {
+.carousel-item:hover > .overlay {
   opacity:1;
   background-color: rgba(0,0,0,0.85);
 }
@@ -379,6 +399,32 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   font-size: 1.1rem;
 }
 
+.about-description-full {
+  font-size: 1.1rem; 
+  max-width: 40rem; 
+  margin: 0 auto; 
+  padding-bottom: 1rem;
+}
+
+.about-left > a > .about-info-full {
+  margin-top: 1.5rem; 
+  padding: 1rem 0 1rem 0;
+}
+
+@media (max-width: 1200px) {
+  .about-info-full > .about-description-full {
+    text-align: left;
+    margin: 0 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  .about-left > a > .about-info-full {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
 .about-grid-title {
   text-align: center;
   padding-top: 3rem;
@@ -447,7 +493,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 4rem;
+  grid-template-rows: 1fr minmax(4rem, fit-content);
   /* Disables link until we know what the url will be */
   pointer-events: none;
   cursor: default;
@@ -500,7 +546,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .about-code {
   grid-column: 1;
   grid-row: 2;
-  padding: 0% 10% 0% 10%;
+  padding: 0% 10% 1rem 10%;
   color: white;
   font-size: 1.25rem;
 }
@@ -577,10 +623,6 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
 .about-full:hover > a > .about-button > button {
   width: 99%;
   height: 95%;
-}
-
-.about-info-full > p {
-  font-size: 1.25rem;
 }
 
 .about-info-full {
