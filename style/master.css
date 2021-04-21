@@ -67,19 +67,70 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   padding-bottom: 10%;
   padding-right: 7.5%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
 }
 .box > img {
   width: 45%;
+  max-width: 100%;
 }
 .datetime {
-  padding-top: 10%;
-  float: right;
+  margin-left: auto;
 }
 
 @media (max-width: 1200px) {
-  #trailer-open {
+  .home-button {
     margin: 0 auto;
   }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+
+
+@media (max-width: 1200px) {
+  .datetime {
+    margin-left: 0;
+  }
+  .box {
+    flex-direction: column;
+    justify-items: center;
+  }
+  .datetime {
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .datetime > .buttons {
+    flex-direction: column;
+  }
+  .buttons > #brochure-button {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+}
+
+.buttons > a {
+  text-decoration: none;
+}
+
+#brochure-button {
+  height: 100%;
+  margin-left: 1rem;
+}
+
+#brochure-button > p {
+  color: white;
+}
+
+#brochure-button:hover, #brochure-button:visited, #brochure-button:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 .modal-body {
@@ -103,7 +154,7 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   top: 2.5%;
 }
 
-#trailer-open {
+.home-button {
   color: white;
   align-items: center;
   padding-top: 1rem;
@@ -120,19 +171,21 @@ nav > .container-fluid > #navbarSupportedContent > ul > li > a {
   height: fit-content;
 }
 
-#trailer-open > p {
+.home-button > p {
   margin-bottom: 0;
   height: fit-content;
+  backface-visibility: hidden;
 }
 
-#trailer-open {
+.home-button {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   width: fit-content;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.05); /* Otherwise leaves behind lines on scale */
+  backface-visibility: hidden;
 }
 
-#trailer-open:hover {
+.home-button:hover {
   -webkit-transform: translateZ(0);
   transform: scale(1.1) rotate(0.01deg);
 }
