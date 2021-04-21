@@ -1,417 +1,944 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Worldfest Home</title>
-    <link rel='shortcut icon' type='image/x-icon' href='./media/favicon.ico'>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/master.css">
-    <script type="text/javascript" src="style/master.js"></script>
-  </head>
-  <body class="background">
-    <nav class="navbar navbar-expand-lg navTransparent sticky-top navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="media/logo_globe.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <!--
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Worldfest Home</title>
+  <link rel='shortcut icon' type='image/x-icon' href='./media/favicon.ico'>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/master.css">
+  <script type="text/javascript" src="style/master.js"></script>
+</head>
+
+<body class="background">
+  <nav class="navbar navbar-expand-lg navTransparent sticky-top navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="media/logo_globe.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <!--
             <li class="nav-item">
               <a class="nav-link" href="show.html">Fashion/Talent Show</a>
             </li>
             -->
-            <li class="nav-item">
-              <a class="nav-link" href="old.html">Gallery</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="content">
-      <p class="gallery-title">Virtual Worldfest 2020 Gallery</p>
-      <div id="gallery_carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="3"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="4"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="5"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="6"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="7"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="8"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="9"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="10"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="11"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="12"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="13"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="14"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="15"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="16"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="17"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="18"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="19"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="20"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="21"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="22"></button>
-          <button type="button" data-bs-target="#gallery_carousel" data-bs-slide-to="23"></button>
-
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="media/Gallery/Aluminum.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Emmeline Murphy</h1>
-                <br>
-                "This piece of jewelry is a gem surrounded by aluminum. This gem is also on an aluminum chain.
-                  The necklace is believed to be in my family pre-1880’s and to have existed at a time where aluminum was
-                  more expensive than gold. During the 1800s aluminium was very expensive due to its scarcity. Fun fact:
-                  the Washington Monument was capped in aluminum during the 1880s, and the cap was pretty costly."
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <video controls>
-              <source src="media/Gallery/Videos/Meher.mp4" type="video/mp4">
-            </video>
-            <div class="overlay-vid">
-              <div class="text">
-                <h1>Meher Bhamra</h1>
-                <br>
-                <p>"The dance style is Bhangra, and it originates from the Punjab region in both India and Pakistan."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Canada.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Olivia Reese</h1>
-                <br>
-                <p>"This picture is of me and my brother in 2003 in the Canadian Parliament. We were on a private
-                  tour because my cousin was the head chef to the Prime Minister."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Challah.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Natalie Keane</h1>
-                <br>
-                <p>"This is braided challah! Challah is a Jewish bread that my family makes on Shabbat (and other
-                   major Jewish holidays). It is typically more golden in color because there are so many eggs in the
-                   dough. A round loaf like this one is typically made on Rosh Hashanah, the Jewish new year, to symbolize
-                   continuity. It has a rich flavor and a spongy, almost cake-like texture on the inside."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Cricket.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Keertik Bacon</h1>
-                <br>
-                <p>"Cricket is a big deal in India. People there follow it like how people in the US follow football.
-                  My family isn’t much different. My dad talks about how he played as a bowler when he was a kid.
-                  Two of my cousins, one of whom lives in England, and the other who lived in India and now lives in Texas,
-                  have played cricket on youth travel teams. They would often drag me into backyard cricket matches when they
-                  visited, and their dads, who also played cricket as kids, would jump in too. Cricket is pretty much a universal experience in India."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Egg_Tart.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Amilee Huang</h1>
-                <br>
-                <p>"This is an egg tart. It is a Hong Kong delicacy of sweet custardy goodness with a buttery, flaky pastry shell. The most
-                  memorable thing from Hong Kong is the smell when you pass by a bakery. The aroma of the freshly made bread and pastries are
-                  unlike those of any other. It is like the smell of freshly baked cookies but asian and better? The egg tart is not the only
-                  pastry which I love. There is also the pineapple bun which is a soft sweet bun filled with a sweet sugary custard in contrast
-                   to the crunchy scored top giving its name pineapple bun. I can't forget the iconic hot dog bun. It is simply a hotdog with a
-                   sweet bread around it, but somehow the simple combination is perfect."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Eggplant.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Abigail Schlossberg</h1>
-                <br>
-                <p>"This is eggplant parmesan which is a dish that comes from Italy. My great great grandma is from Genoa which is small city
-                   on the coast of Italy. Food plays a big role in italian families; dishes mainly consist of cheeses, tomatoes, and pastas/breads.
-                   The recipes are passed down from generation to generation."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Estonia.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Lilly Rainey</h1>
-                <br>
-                <p>"My grandmother immigrated from Estonia to the United States in the 1950’s, and my family is strongly connected to our Estonian roots.
-                  In 2014, I had the privilege of attending the renowned Estonian Song and Dance Festivals. These celebrations are the largest gatherings
-                  in the country and occur every five years over the summer. The traditons started in 1869 and celebrate Estonian culture and identity.
-                   At the Dance Festival, private dance groups audition and practice their routines years in advance. Throughout the performance they move
-                   into different patterns like circles or lines that the crowds can see from above in their seats. The Song Festival occurs the next day
-                   and many dancers also sing at this event. Thousands of singers gather in the festival dome and the beautiful melodies can be heard for miles.
-                    A flame is lit on the Song Festival grounds and is carried through all the towns in the country, symbolizing unification. I will never forget
-                    this amazing experience that made me proud of my heritage."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Garba.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Sakshi Gholap</h1>
-                <br>
-                <p>"This outfit is also from India, traditionally worn to an event called "Garba". This is in celebration of a god and consists of dancing in
-                  circles with lots of people and music. The skirt also flys up while twirling around, and looks very beautiful. Overall, the outfit is full of
-                  jewels and hand embroidery, making each unique."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Goat.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Anthony Duan</h1>
-                <br>
-                <p>"Here I am holding something, something whose meaning I was not always aware of, and which might seem out of place in my otherwise Westernized
-                  life. When I was younger, I thought it was just a decoration, like a painting, but Asian. But over time, I gradually became more aware of what
-                  it symbolized. It is a connection between me and my ancestors, between my American family and my Chinese relatives. At first it merely appears
-                   Chinese: it's made of red paper, a traditional medium of Chinese handicraft, and is surrounded by the exaggerated, serrated edges typical of
-                   that art form. But it means something personal too. In the years of the Chinese zodiac, I was born in that of the goat, or "yang". My Chinese
-                    grandfather gave it to my parents at that time, as a reminder of what I was and what I came from. It was a way for him to leave a part of
-                    himself with us. It was a way to show that no matter what, despite being an ocean and continent away, we were still the same family, and
-                    that I was still its little goat. And in Chinese culture, a family cannot be broken. It must stay together, and this little red goat is a sense
-                     of our family's continuation, continuing to move, just as the years and the zodiac themselves do. Things change, but they never end."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <video controls>
-              <source src="media/Gallery/Videos/Seohyun.mov" type="video/mp4">
-            </video>
-            <div class="overlay-vid">
-              <div class="text">
-                <h1>Seohyun Park</h1>
-                <br>
-                <p>"I created this video which presents a part of Korean culture. I am wear Hanbok which is traditional Korean attire worn on special occasions. I took
-                  a fun twist to it and made it from a trending social media outlet to make it a bit more interesting!"</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Nauvari.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Apoorva Ajith</h1>
-                <br>
-                <p>"This is a nauvari, also called kaashta, sari from the state of Maharashtra, India. Most saris are seven yards long and are draped and pleated
-                   to form a skirt-like outfit. Different regions in India all have different traditional ways of draping saris. "Nauv" means nine in Marathi, the
-                   official language of Maharashtra, and this sari is nine yards long instead of seven. This extra length allows it to be pleated and tucked into
-                   a loose pants style. I'm only half Maharashtran, but I appreciate this chance to share my culture with you!"</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Onam.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Reshma Jasmin</h1>
-                <br>
-                <p>"I am wearing a gold necklace my late grandfather gifted my mother, and in the background, you can see several plants native to Kerala, such
-                  as a banana plant, a jasmine plant, and a kanthari(small pepper) plant on my deck. This is a photo of me wearing the traditional onam churidar.
-                   Onam is a traditionally Hindu holiday celebrated in Kerala, but Malayalis of all faiths still celebrate it. The classic onam colors are cream/off
-                   -white and gold. To celebrate Onam, we dress in traditional clothes, use flowers to create a large mandala, and prepare/eat an Onam Sadya (meal)."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Pascha.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>John Sedor</h1>
-                <br>
-                <p>"Attached is a photo of my family's Pascha basket, part of the traditional Russian Orthodox Pascha (Easter) celebration. The basket contains
-                  eggs, bacon, ham, cheese, Pascha bread, kulich (sweet bread), salt, and kielbasa (traditional Slavic sausage). It also has a candle and an Icon
-                   of Jesus' resurrection. We make this every year to be blessed and then eaten after the Paschal church service, which happens at midnight on
-                   Easter. It means a lot this year as we are unable to go to church. It is very important, as all the elements are symbolic of elements of the
-                    Orthodox faith, as well as the fact that we fast from meat and cheese for all of Lent (40-50 days). It is a very exciting time when Pascha
-                    comes around and we can eat meat again."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Pickle.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Julia Berkeley</h1>
-                <br>
-                <p>"My family first came to America from Germany in the early 1900s. My great grandparents were some of the first in their families to be born
-                  in America. These pickles are my great-grandma’s recipe. The pickle is traditionally a huge part of German culture. Most German food is pickled
-                   and high in vinegar content such as sauerkraut or pickles. Additionally in German culture, on Christmas, a glass pickle ornament is hidden on
-                   the tree, and the first child that finds it gets a special present or a treat. We still make these traditional German pickles today to honor
-                   our culture and where we came from."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Pinata.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Constanza Montemayor</h1>
-                <br>
-                <p>"Here is a photo of my twin brother, Carlos, holding a beheaded tiger piñata at on our birthday. Although a cursed image, it remains cultural.
-                  In Mexico, piñatas are a traditional decoration and activity for nearly any joyful celebration, including birthdays and New Years. Traditionally,
-                   they are paper mâché, cardboard, and wire constructions in the shape of stars with ribbons hanging down from the tips. However, they have been
-                   modernized and now often depict characters, animals, objects, and various pop culture figures, and come in a variety of colors. During a
-                   celebration, one person fills the piñata with candy or gifts and keeps it hung on a string above the guests' heads, and the guests take turns
-                    hitting it with a broomstick until the candy spills out, which they then collect. Carlos hit this piñata a bit too hard and it flew right off
-                    the string with its head off, but after re-hanging it and a few more turns, candy spilled out as planned."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Pizzelle.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Josh Oberly</h1>
-                <br>
-                <p>"I have made an Italian dessert called a pizzelle that my Italian grandmother often makes. It is a cookie that uses anise (similar in taste to
-                  liquorice but better) for flavor, and cooked in a tiny waffle iron device where it is pressed thin."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <video controls>
-              <source src="media/Gallery/Videos/Anika.mp4" type="video/mp4">
-            </video>
-            <div class="overlay-vid">
-              <div class="text">
-                <h1>Anika Huang</h1>
-                <br>
-                <p>"This is a TikTok that my sister and I made to celebrate a bit of our culture. I am Chinese and the outfit that I am wearing (in the last part
-                  of the video) is a cheongsam/qipao, a traditional Chinese dress. It was originally popularized by the Manchus during the Qing dynasty and at the
-                  time was called changpao. It was generally a fairly loose fit that hung in an A-line shape. It has since been modernized and adapted to a tighter
-                  fit and a higher slit. This new version was popularized by celebrities and high class members of society. Today, many versions of this traditional
-                   dress can be found. Most of them feature a delicate floral pattern, but there are many alternative designs from solid colors to polka dots to
-                   anything in between. It is an extremely popular article of clothing during festive seasons like the Lunar New Year and a typical garment worn
-                   by the bride during at least a part of her wedding."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <video controls>
-              <source src="media/Gallery/Videos/Annie.mp4" type="video/mp4">
-            </video>
-            <div class="overlay-vid">
-              <div class="text">
-                <h1>Annie Liu</h1>
-                <br>
-                <p>"In this video for the dance titled Remembrance I am using a fan a traditional Chinese prop in art forms including opera and acrobatics. Chinese
-                  dance costumes in the modern day vary widely, and a common type consists of loose fitting pants and a top while others are more elaborate and
-                  consist of multi-layer dresses/parts. Due to Westernization there has been a delicious mixing of ballet and Chinese dance, hip hop, and such and
-                   we shall look forward to what the future brings!"</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <video controls>
-              <source src="media/Gallery/Videos/Genevieve.mp4" type="video/mp4">
-            </video>
-            <div class="overlay-vid">
-              <div class="text">
-                <h1>Genevieve Lee</h1>
-                <br>
-                <p>"In the United States, the wintertime festivities come to a close after New Years, but in Spain, this is not the case, as kids eagerly await the
-                  arrival of los reyes magos, or the three kings on January 6th. It is believed that this is the day that the three wise men, called Gaspar,
-                   Baltasar, and Melchor in Spanish, visited baby Jesus and gave him gifts. The festivities begin on January 5th, and the streets become filled with
-                    people, as they observe the parade processions and await the calbagatas de los reyes magos, which are huge floats that show reenactments of each
-                     of the three kings. The procession also includes musicians and other cabalgatas with children who throw candy and goodies into the crowd. Later
-                     , on the evening of January 6th, children lay out food for the reyes magos to eat and also leave their shoes out for the reyes magos to put
-                     candy in."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Romanian_Clothes.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Stefan Cehan</h1>
-                <br>
-                <p>"This is traditional Romanian folk clothing. Traditional male clothing consists of white pants tucked into boots along with an embroidered sash
-                  and shirt with a conic woolen cap. Females traditionally wear an embroidered white petticoat over a wrap skirt in addition to an embroidered blouse
-                   and scarf which is worn around the head."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Romanian_Costume.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Daria Cara</h1>
-                <br>
-                <p>"This is me in my traditional Romanian costume, consisting of an ie (shirt), fotă (skirt), maramă (head covering), and brâu (belt / wrap). This
-                  is the traditional fashion I would have worn to Worldfest, so I am glad to be able to share it digitally."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Tunkul.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Diego Montemayor</h1>
-                <br>
-                <p>"This is the tunkul, or teponaztli, an Aztec and Mayan slit drum made from a hollowed out wooden log that is hit with small drumsticks. This
-                  version is especially extravagant but it can be a simple as a cylindrical, hollow log with slits. It is played by hitting the log on the least
-                   fixed points, which is why there are slits, producing a louder sound than a typical log would. Historically, it is typically played in dances
-                    and performances, and I have personally played it at the world festival at Centennial Lane Elementary School when I was in 4th grade."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/Gallery/Yut.jpeg" class="d-block w-100">
-            <div class="overlay">
-              <div class="text">
-                <h1>Joohee Na</h1>
-                <br>
-                <p>"These wooden sticks may not seem much, but looks can be very deceiving— known as “Yut Nori”, this is a traditional Korean game played during
-                   New Years. First introduced all the way back in 57 BC, its value and entertainment still maintains in the 21st century. My family has our own
-                    tradition to play this during New Years and it’s very fun!"</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#gallery_carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#gallery_carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <li class="nav-item">
+            <a class="nav-link" href="old.html">Gallery</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-  </body>
+  <div class="content">
+    <p class="gallery-title">Virtual Worldfest 2021 Gallery</p>
+    <div id="gallery_carousel_2021" class="gallery-carousel carousel slide" data-bs-ride="carousel"
+      data-bs-interval="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="6"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="7"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="8"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="9"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="10"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="11"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="12"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="13"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="14"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="15"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="16"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="17"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="18"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="19"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="20"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="21"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="22"></button>
+        <button type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide-to="23"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="media/Gallery/Worldfest2021_Images/Alexa Patnaude.jpg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Alexa Patnaude</h1>
+              <br>
+              "This bowl is a handcrafted piece of English Pottery from the 1800s. It was bought by my 3rd great
+              grandmother when she was living in England, and has been passed down my family as an heirloom. Pottery
+              was, and still is, a form of art, and was bought for the purpose of decoration. From the day it was bought
+              to this present day, it has been on display and as symbol of our British heritage, displaying the beauty
+              of its craftmanship."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Kevin John.PNG" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Kevin John</h1>
+              <br>
+              "Murukku: Deep fried Indian crunchy snack made with rice flour and gram flour.
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Jay Smith.jpeg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Jaylin Smith</h1>
+              <br>
+              "This is a picture of me standing with a few Conchero dancers in Mexico after watching a beautiful
+              performance called “Concheros” or the “Chichimecas”! The Concheros dance is a Mexican ritual that
+              originated in 1522, and is primarily performed at seasonal festivals in northern Mexico City. The dance
+              includes gorgeous floral decorations and lively music. The Conchero lute, which is an instrument played
+              during the ritual, was implemented into the dance as a sign of Spanish influence. Though the Spanish had a
+              heavy impact on the ritual, it was created to maintain ancient Colombian ritual after the Spanish
+              conquered the Chichimeca tribe."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Justin Liang.JPG" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Justin Liang</h1>
+              <br>
+              "This is a picture of me practicing a step behind side kick, one of the numerous kicks taught in the
+              Bujinkan Art. Bujinkan "Budo" Taijutsu is a Japanese based martial art that involves techniques that focus
+              on disabling an aggressor as efficiently as possible. Martial arts has been a part of Japanese culture for
+              hundreds of years, with many of the techniques taught in Bujinkan dating back to the samurai era. While
+              martial arts was primarily used on the battlefield and in self defense, it was also comprised of a moral
+              code called Bushido that a samurai must follow, with contemporary forms of Bushido still existing in
+              modern Japan today."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Lucas Jacob.jpg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Lucas Jacob</h1>
+              <br>
+              "My family and I took a trip to Kenya about two years ago. We usually go once a year or every other year,
+              but because of corona we were not able to this year. These paintings, jewelry, and wood carvings are all
+              apart of the Masai warriors in Kenya. They live on the Masai Mara which is a savannah National Reserve
+              park and they are well known for their jumping ability. They hold contests for jumping in order to show
+              their strength. Additionally as a coming-of-age ritual they must kill a lion, which they do in about a
+              group of 10. The necklace shown has a lions tooth from one of the lions that they killed. The wooden baton
+              is called a lion stick, but this one is more for decoration rather than actual use."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Francesca Cumello.jpeg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Francesca Cumello</h1>
+              <br>
+              "I submitted an image of gnocchi bolognese with spinach, which is an Italian dish that is very frequently
+              made in my family. Gnocchi dates back to around 9000 BCE, not attributed to a single location. Its
+              original name was "gnocco," which means "node" and can also refer to "knuckles" -- referring to the shape
+              of the pasta. Gnocchi began using potato as a primary ingredient in the 16th century when they were
+              brought from the Americas. Prior to the introduction of potatoes in Europe, gnocchi was comprised of cold
+              water and flour. My family is from Sicily, and the region of Italy is now responsible for roughly 50% of
+              the country's potato production (potatoes are mostly grown in Southern Italy). Over the centuries, people
+              have experimented with its ingredients, adding other flours such as cornmeal and seminola as well as other
+              foods (eg. spinach and pumpkin). Bolognese, also known as ragú, is a meat-based sauce that is used as the
+              main flavor component to many pasta dishes, and originated in Bologna, Italy. It is not typically served
+              with gnocchi (rather with lasagna or tagiatelle), but it is typical of Italian-Americans to mix components
+              of Italian cuisine. Gnocchi alla bolognese is a dish that combines multiple aspects of Italian cuisine and
+              is a significant part of my family's meal repertoire."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Kelsey Genovese.jpg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Kelsey Genovese</h1>
+              <br>
+              "I made cannoli to celebrate the culture of Sicily Italy, the island my ancestors emigrated from. Sicily
+              is well known for its cuisines and wine, so it's no wonder they call it God's Kitchen! The most famous
+              part of Sicilian cuisine is the pastry dishes, notably cannoli (means "little tube" in Sicilian). Cannoli
+              are tube-shaped fried pastry shells with a filling usually made with ricotta but can be custard as well.
+              For toppings, I sprinkled chocolate chips throughout the ricotta and added candied fruit on the ends.
+              Cannoli were historically prepared to celebrate the Carnevale, a festival that takes place in Italy before
+              Lent begins. Sicily is also one of the largest wine producers in Italy and is known primarily for Marsala
+              wines, which is used in making cannoli shells."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Diego Montemayor.JPG" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Diego Montemayor</h1>
+              <br>
+              "This is lotería, or "lottery" translated from Spanish. It is a traditional game of chance like bingo that
+              is played in Mexico at events like parties or fairs. Traditional lotería is played on 4 x 4 boards of
+              tiles that each correspond to a card. The cards are essentially the equivalent of the balls in bingo and
+              are randomized through shuffling. A card is drawn from the top of the deck and read aloud, at which point
+              players must mark their spot on their board if they have the same picture on their board. Usually each
+              card shows a different person, object, or animal and players mark the board with uncooked beans, however
+              actual plastic pieces have been used more in recent years. The winner can be determined in a multitude of
+              ways, the most common being the first person to get 4 in a row or sometimes the first person to fill their
+              board, depending on how the players wish to play the game. The specific version of lotería shown in this
+              image is a version that pictures the many different jobs and activities in pre-Columbian Mexican
+              societies, such as the Maya and the Aztec peoples. It also uses grains of maize as marking pieces to
+              recognize the importance of this product to these ancient societies."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Annabel Rose.png" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Annabel Rose</h1>
+              <br>
+              "For my submission, I chose my great-grandmother’s Albanian cookbook. My mom immigrated to the US from
+              Albania when she was 22, and this was one of the items she brought from home. Especially right now, when
+              we can’t travel, cooking Albanian food is one of the biggest ways my family maintains ties with our
+              culture and relatives. A few of the pages I added pictures of are some of my family’s favorite recipes:
+              The first is pastiço, a pasta-like dish that my sister loves, the second is petulla, a pretty basic type
+              of fried dough that can be used for sweet or savory desserts and appetizers, and the last is byrek
+              (probably what we make the most), and it’s basically a filo-dough casserole that usually includes leeks
+              and other vegetables. In my visits to Albania over the years, I’ve always noticed that food is used as a
+              method of hospitality and respect. There seems to be an unspoken rule that a guest’s plate can never be
+              left empty, and the medieval Albanian code of honor (the Best) mandates that guests and strangers are
+              looked after with gratitude (often expressed with invitations to meals!)."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Timothy Woerner.jpeg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Timothy Woerner</h1>
+              <br>
+              "I am submitting a photo of Greek Dolmades. My family is Greek and loves to both eat and prepare this
+              meal, so I used WorldFest as an opportunity to prepare it myself to show to others. Dolmades are a
+              traditional Greek food composed of grape leaves stuffed with rice and meat topped off with avgolemono
+              sauce (a traditional greek sauce made of lemons and eggs). The origins of Dolmades are quite unclear.
+              Although unlikely, some like to believe they may date back to 335 BC when Alexander the Great besieged
+              Thebes causing a shortage of food. It is said the Thebans began to wrap the little meat they had in
+              leaves, thus creating the first dolmades. A more likely origin may result in creation coupled with
+              increasing popularity during the Ottoman Empire that likely spread to both Turkey, Greece, and other
+              neighboring countries after the fall of the Empire. Such an origin would demonstrate the cultural
+              similarities between Turkey and Greece that are specifically seen in cuisine."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video controls>
+            <source src="media/Gallery/Videos/Krystal Wu.mp4" type="video/mp4">
+          </video>
+          <div class="overlay">
+            <div class="text">
+              <h1>Krystal Wu</h1>
+              <br>
+              "This is a video of a view that I took from the mountains of Yangmingshan National Park (陽明山國家公園), one of
+              nine national parks in Taiwan. It is the only park in Taiwan with hot springs and volcanic geography.
+              Yangmingshan is situated between Taipei and New Taipei City on the northern edge of the Taipei basin.
+              During the Qing Dynasty and Japanese occupation of Taiwan, officials frequently set fire to the mountain
+              range in attempts to protect its rich sulfur deposits from thieves. As a result, Yangmingshan was referred
+              to as Caoshan (草山), or “Grass Mountain,” due to its abundance of grass and lack of trees. After World War
+              II, Yangmingshan was given its name to commemorate Wang Yang Ming, a famous Chinese scholar of the Ming
+              Dynasty. Natural resources and scenery of Yangmingshan also began to undergo planned development and
+              utilization. Today, Yangmingshan is known for its hot springs, diverse wildlife and vegetation, sulfur
+              crystals, and hiking trails. "
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Sarah Arcuri.jpg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Sarah Arcuri</h1>
+              <br>
+              "I chose to create Italian-inspired crepes for my submission. Crepes are a prominent aspect of both French
+              and French-Canadian cuisine. My family and I grew up very close to friends who were French, so I was
+              immersed in their culture and cuisine from a young age. My family is Sicilian, so Italian cuisine has
+              always been present in our household. I decided to create a dish that combines both aspects of these
+              cultures that are familiar to me. My French-Italian fusion crepe consists of an oregano batter, filled
+              with rosemary prosciutto cotto, kale, spinach, and both mozzarella and parmesan cheeses. I topped the
+              crepe with dried basil from a local organic market. Although the flavors were different than traditional
+              crepes, I really enjoyed the Italian twist. "
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Jake Smith.jpg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Jake Smith</h1>
+              <br>
+              "For Worldfest, I am submitting an image of sauerkraut and kielbasa that I prepared. Sauerkraut and
+              Kielbasa is a cultural dish that originally from Germany. In general, this dish is thought to bring good
+              luck when eaten. This tradition was brought over to Pennsylvania and Ohio by German immigrants and has
+              been widely adopted. Within my family, we eat sauerkraut and kielbasa every New Years Day in order to
+              bring good luck in the New Year. In terms of making this dish, the process involves adding sauerkraut,
+              kielbasa, and brown sugar to a roaster and cooking inside of the oven. Recipes differ from region to
+              region. "
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Naomi Chao.png" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Naomi Chao</h1>
+              <br>
+              "Pictured here is 火锅, or hotpot, a main dish popular in China. Hotpot is prepared by placing raw
+              ingredients in a pot of hot broth and cooking the ingredients. The ingredients are cut into thin slices to
+              reduce the cooking time. Oftentimes, we eat the cooked food with dipping sauce (as you can see in the
+              upper left hand corner of this picture). With hot pot, there are endless variations of this dish. Starting
+              with the soup base, popular broth flavors include spicy, tomato, herbal, mushroom, and pork bone. My
+              personal favorite is mushroom broth; however, because the rest of my family love spicy broth, we
+              compromise with the tomato broth! My family likes to put enoki mushrooms, baby bok choy, shrimp, lamb and
+              beef slices, and fish balls in our hot pot. However, many more foods can be enjoyed with hot pot such as
+              tofu, mussels, duck blood, and beef aorta. Just like how there are numerous broth variations and
+              ingredients, one can create their unique dipping sauce from popular condiments such as soy sauce, sesame
+              oil, chili powder, and oyster sauce. My go-to dipping sauce takes a combination of sesame paste, peanut
+              butter, and a tad bit of soy sauce, giving the sauce a tangy flavor that enhances the overall hot pot
+              experience. And that is exactly what hot pot is: it is more than just a dish, it is an opportunity for
+              friends and family to sit around a pot and relax while talking. As a child, gathering around the table for
+              dinner was a central part of my family (and is important in Chinese culture). However, as we grew older,
+              because of my sister and I’s different practice times, my family rarely had the opportunity to eat dinner
+              at the same time. Hotpot gives my family the chance to come together as a family. "
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Mary Maciorowski.jpg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Mary Maciorowski</h1>
+              <br>
+              "The items that are displayed in the picture are handcrafted pieces of Polish pottery. As my ancestors are
+              from Poland, these pieces have significance to my origins and family history. All of the pottery was made
+              in Poland and was passed down from my grandparents to my family. The history of Polish pottery dates back
+              to 6,000 B.C. and has roots in the town of Boleslawiec. The pottery pictured embodies the traditional
+              patterns as they are inspired by the peacock and have the royal blue color. In Europe, peacocks are seen
+              as a symbol of royalty and wealth, which inspired the ceramic artists to base their pottery on the designs
+              and patterns of a peacock. The peacock patterns usually include swirling and circle designs."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Prakhya Chikkem.jpeg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Prakhya Chikkem</h1>
+              <br>
+              "The dish featured in the picture is a tamarind rice dish that originates from India; different regions of
+              India give this food different names, some including Pulihora and Puliyodarai. This dish is made by mixing
+              in rice with lemon or tamarind juice, along with some Indian spices and peanuts. Tamarind rice is often
+              made on Indian festivals and is eaten as a meal for breakfast, lunch or dinner. Moreover, during religious
+              festivals, tamarind rice is often made as prasadam, or a religious offering to the God. Therefore, this
+              dish is also commonly served at temples. "
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Kate Tourison.jpeg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Kate Tourison</h1>
+              <br>
+              "This is Irish Stew! This dish is recognized as Ireland’s national dish, a wholesome meal which can be
+              traced back to the early 1800’s. Traditional Irish Stew was originally known as “peasant food,” made from
+              whatever animals and crops were most readily available. The meat-vegetable mixture most often consisted of
+              lamb or mutton, potatoes—unsurprising considering the abundance of potatoes being farmed during this time
+              period—onions, and other root vegetables. In later years, the original recipe was brought to the Americas
+              and evolved to cater to more accessible ingredients. Today Irish Stew is sometimes made using beef,
+              carrots, turnips, barley, and even beer! I’ve grown up eating my grandmother’s Irish Stew—her ancestors
+              were from Donegal, Ireland. "
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Alexander Burke.jpg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Alexander Burke & Max Middleton</h1>
+              <br>
+              "My partner and I submitted a poster on the country of Spain. Throughout our first stages of research, we
+              uncovered so much about this country. From its history to its culture and language we were able to see
+              what a multifaceted country this was and, along with that, how it was intertwined in some of the most
+              pivotal moments in history. A poster seemed like the right fit to uncover some, of their voluminous
+              history. Thus, why we started our design by lining the bottom of our poster with a brief timeline. From
+              the infamous duet of Ferdinand and Isabella hiring Columbus and kicking of the Golden age, to Spain's fall
+              around the time of the War of Spanish succession. They set the precedent and drove other countries to
+              develop and compete. Without Spain who knows where development, colonization, and infrastructure would be
+              during this time. This is not even addressing their strength in the Catholic realm. With Spanish kings and
+              their thrones not only holding political power but, resembling and standing for the ancient catholic
+              church it was only right that we included catholic holidays like Corpus Christi, All saints day, and more.
+              Their culture was and is such a big part of this country and the world with people globally learning the
+              Spanish language, consuming Spanish Foods, and even watching Spanish teams and players dominate in the
+              Football leauges."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Lindsay White.jpeg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Lindsay White</h1>
+              <br>
+              "This is a picture of kringlas, which are traditional Norwegian holiday cookies. They are made mainly with
+              flour, sugar, butter, and sour cream, and taste similar to a sweet bread. They are very simple cookies and
+              are typically made in a pretzel or figure-eight shape. Kringlas originated from Roman Catholic monks in
+              the 13th century."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Tejaswi Datla.png" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Tejaswi Datla</h1>
+              <br>
+              "For my Worldfest submission I have chosen to submit a picture of me in traditional Kuchipudi Dance
+              attire. Kuchipudi is one of many South Asian classical dance forms that originated in the 17th Century, in
+              the Indian state of Andhra Pradesh. The dance form is based in Hinduisim and contains many references to
+              ancient mythology. It was often performed in temples and is seen as a form of storytelling and worship.
+              You can expect a traditional Kuchipudi performance to contain many instruments, singers, and dancers.
+              These dancers will also usually wear extravagant makeup along with intricate with jewelry. Personally,
+              Kuchipudi means a lot to me. I have been learning this dance form for seven years now, and admit that it
+              has taken a lot of passion, effort, and dedication for me to learn it. This particular dance is also very
+              important to me since it connects me back to heritage and roots, allowing me to gain a deeper
+              understanding of my culture."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Emma Bush.jpg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Emma Bush</h1>
+              <br>
+              "This is a video of the process of making Maisir Wat which is a stew featuring spiced red lentils. This
+              dish is an Ethiopian staple throughout the country and it's defining spice "berbere" is featured in many
+              Ethiopian dishes. Not only is berbere an important ingredient in Misir Wat but also in Ethiopia's national
+              dish (a chicken stew) as well as the popular condiment "awaze." This spice mix consists of powdered chili
+              pepper and often includes fenugreek, cinnamon, coriander, nutmeg, and cloves. This blend is thought to
+              have originated from the time that Ethiopia controlled the route from the Silk Road to the Red Sea. This
+              connection provided them with unique spices that they learned to incorporate into their cuisine and
+              continue to use to this day."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/Gallery/Worldfest2021_Images/Bailey Carpenter.jpeg" class="d-block w-100">
+          <div class="overlay">
+            <div class="text">
+              <h1>Bailey Carpenter</h1>
+              <br>
+              "Fish tacos are integral when visiting Baja, Mexico. They are a good quick, on the go, but still delicious
+              food enjoyed by everyone. From tourist, surfers, and everyone in between, fish tacos are a gathering point
+              for many. When the Spanish took over parts of Mexico, they created a lasting impact on the culinary
+              influence. Once the Spanish ended up leaving, their food parties stayed in Baja. Asian and European
+              countries listed Baja, so all of the cuisine combined created the fish tacos. In its simplest form, fish
+              tacos begin with a corn tortilla, filled with fried fish, topped with classic Mexican toppings. Since the
+              birth of fish tacos, it has spread from California, to all over the world."
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video controls>
+            <source src="media/Gallery/Videos/Brandon.mp4" type="video/mp4">
+          </video>
+          <div class="overlay">
+            <div class="text">
+              <h1>Brandon Du</h1>
+              <br>
+              <p>TODO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#gallery_carousel_2021" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <p class="gallery-title">Virtual Worldfest 2020 Gallery</p>
+  <div id="gallery_carousel_2020" class="gallery-carousel carousel slide" data-bs-ride="carousel"
+    data-bs-interval="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="7"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="8"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="9"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="10"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="11"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="12"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="13"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="14"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="15"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="16"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="17"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="18"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="19"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="20"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="21"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="22"></button>
+      <button type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide-to="23"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="media/Gallery/Aluminum.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Emmeline Murphy</h1>
+            <br>
+            "This piece of jewelry is a gem surrounded by aluminum. This gem is also on an aluminum chain.
+            The necklace is believed to be in my family pre-1880’s and to have existed at a time where aluminum was
+            more expensive than gold. During the 1800s aluminium was very expensive due to its scarcity. Fun fact:
+            the Washington Monument was capped in aluminum during the 1880s, and the cap was pretty costly."
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video controls style="z-index: 1000;">
+          <source src="media/Gallery/Videos/Meher.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <div class="text">
+            <h1>Meher Bhamra</h1>
+            <br>
+            <p>"The dance style is Bhangra, and it originates from the Punjab region in both India and Pakistan."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Canada.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Olivia Reese</h1>
+            <br>
+            <p>"This picture is of me and my brother in 2003 in the Canadian Parliament. We were on a private
+              tour because my cousin was the head chef to the Prime Minister."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Challah.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Natalie Keane</h1>
+            <br>
+            <p>"This is braided challah! Challah is a Jewish bread that my family makes on Shabbat (and other
+              major Jewish holidays). It is typically more golden in color because there are so many eggs in the
+              dough. A round loaf like this one is typically made on Rosh Hashanah, the Jewish new year, to symbolize
+              continuity. It has a rich flavor and a spongy, almost cake-like texture on the inside."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Cricket.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Keertik Bacon</h1>
+            <br>
+            <p>"Cricket is a big deal in India. People there follow it like how people in the US follow football.
+              My family isn’t much different. My dad talks about how he played as a bowler when he was a kid.
+              Two of my cousins, one of whom lives in England, and the other who lived in India and now lives in Texas,
+              have played cricket on youth travel teams. They would often drag me into backyard cricket matches when
+              they
+              visited, and their dads, who also played cricket as kids, would jump in too. Cricket is pretty much a
+              universal experience in India."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Egg_Tart.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Amilee Huang</h1>
+            <br>
+            <p>"This is an egg tart. It is a Hong Kong delicacy of sweet custardy goodness with a buttery, flaky pastry
+              shell. The most
+              memorable thing from Hong Kong is the smell when you pass by a bakery. The aroma of the freshly made bread
+              and pastries are
+              unlike those of any other. It is like the smell of freshly baked cookies but asian and better? The egg
+              tart is not the only
+              pastry which I love. There is also the pineapple bun which is a soft sweet bun filled with a sweet sugary
+              custard in contrast
+              to the crunchy scored top giving its name pineapple bun. I can't forget the iconic hot dog bun. It is
+              simply a hotdog with a
+              sweet bread around it, but somehow the simple combination is perfect."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Eggplant.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Abigail Schlossberg</h1>
+            <br>
+            <p>"This is eggplant parmesan which is a dish that comes from Italy. My great great grandma is from Genoa
+              which is small city
+              on the coast of Italy. Food plays a big role in italian families; dishes mainly consist of cheeses,
+              tomatoes, and pastas/breads.
+              The recipes are passed down from generation to generation."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Estonia.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Lilly Rainey</h1>
+            <br>
+            <p>"My grandmother immigrated from Estonia to the United States in the 1950’s, and my family is strongly
+              connected to our Estonian roots.
+              In 2014, I had the privilege of attending the renowned Estonian Song and Dance Festivals. These
+              celebrations are the largest gatherings
+              in the country and occur every five years over the summer. The traditons started in 1869 and celebrate
+              Estonian culture and identity.
+              At the Dance Festival, private dance groups audition and practice their routines years in advance.
+              Throughout the performance they move
+              into different patterns like circles or lines that the crowds can see from above in their seats. The Song
+              Festival occurs the next day
+              and many dancers also sing at this event. Thousands of singers gather in the festival dome and the
+              beautiful melodies can be heard for miles.
+              A flame is lit on the Song Festival grounds and is carried through all the towns in the country,
+              symbolizing unification. I will never forget
+              this amazing experience that made me proud of my heritage."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Garba.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Sakshi Gholap</h1>
+            <br>
+            <p>"This outfit is also from India, traditionally worn to an event called "Garba". This is in celebration of
+              a god and consists of dancing in
+              circles with lots of people and music. The skirt also flys up while twirling around, and looks very
+              beautiful. Overall, the outfit is full of
+              jewels and hand embroidery, making each unique."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Goat.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Anthony Duan</h1>
+            <br>
+            <p>"Here I am holding something, something whose meaning I was not always aware of, and which might seem out
+              of place in my otherwise Westernized
+              life. When I was younger, I thought it was just a decoration, like a painting, but Asian. But over time, I
+              gradually became more aware of what
+              it symbolized. It is a connection between me and my ancestors, between my American family and my Chinese
+              relatives. At first it merely appears
+              Chinese: it's made of red paper, a traditional medium of Chinese handicraft, and is surrounded by the
+              exaggerated, serrated edges typical of
+              that art form. But it means something personal too. In the years of the Chinese zodiac, I was born in that
+              of the goat, or "yang". My Chinese
+              grandfather gave it to my parents at that time, as a reminder of what I was and what I came from. It was a
+              way for him to leave a part of
+              himself with us. It was a way to show that no matter what, despite being an ocean and continent away, we
+              were still the same family, and
+              that I was still its little goat. And in Chinese culture, a family cannot be broken. It must stay
+              together, and this little red goat is a sense
+              of our family's continuation, continuing to move, just as the years and the zodiac themselves do. Things
+              change, but they never end."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video controls>
+          <source src="media/Gallery/Videos/Seohyun.mov" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <div class="text">
+            <h1>Seohyun Park</h1>
+            <br>
+            <p>"I created this video which presents a part of Korean culture. I am wear Hanbok which is traditional
+              Korean attire worn on special occasions. I took
+              a fun twist to it and made it from a trending social media outlet to make it a bit more interesting!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Nauvari.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Apoorva Ajith</h1>
+            <br>
+            <p>"This is a nauvari, also called kaashta, sari from the state of Maharashtra, India. Most saris are seven
+              yards long and are draped and pleated
+              to form a skirt-like outfit. Different regions in India all have different traditional ways of draping
+              saris. "Nauv" means nine in Marathi, the
+              official language of Maharashtra, and this sari is nine yards long instead of seven. This extra length
+              allows it to be pleated and tucked into
+              a loose pants style. I'm only half Maharashtran, but I appreciate this chance to share my culture with
+              you!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Onam.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Reshma Jasmin</h1>
+            <br>
+            <p>"I am wearing a gold necklace my late grandfather gifted my mother, and in the background, you can see
+              several plants native to Kerala, such
+              as a banana plant, a jasmine plant, and a kanthari(small pepper) plant on my deck. This is a photo of me
+              wearing the traditional onam churidar.
+              Onam is a traditionally Hindu holiday celebrated in Kerala, but Malayalis of all faiths still celebrate
+              it. The classic onam colors are cream/off
+              -white and gold. To celebrate Onam, we dress in traditional clothes, use flowers to create a large
+              mandala, and prepare/eat an Onam Sadya (meal)."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Pascha.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>John Sedor</h1>
+            <br>
+            <p>"Attached is a photo of my family's Pascha basket, part of the traditional Russian Orthodox Pascha
+              (Easter) celebration. The basket contains
+              eggs, bacon, ham, cheese, Pascha bread, kulich (sweet bread), salt, and kielbasa (traditional Slavic
+              sausage). It also has a candle and an Icon
+              of Jesus' resurrection. We make this every year to be blessed and then eaten after the Paschal church
+              service, which happens at midnight on
+              Easter. It means a lot this year as we are unable to go to church. It is very important, as all the
+              elements are symbolic of elements of the
+              Orthodox faith, as well as the fact that we fast from meat and cheese for all of Lent (40-50 days). It is
+              a very exciting time when Pascha
+              comes around and we can eat meat again."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Pickle.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Julia Berkeley</h1>
+            <br>
+            <p>"My family first came to America from Germany in the early 1900s. My great grandparents were some of the
+              first in their families to be born
+              in America. These pickles are my great-grandma’s recipe. The pickle is traditionally a huge part of German
+              culture. Most German food is pickled
+              and high in vinegar content such as sauerkraut or pickles. Additionally in German culture, on Christmas, a
+              glass pickle ornament is hidden on
+              the tree, and the first child that finds it gets a special present or a treat. We still make these
+              traditional German pickles today to honor
+              our culture and where we came from."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Pinata.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Constanza Montemayor</h1>
+            <br>
+            <p>"Here is a photo of my twin brother, Carlos, holding a beheaded tiger piñata at on our birthday. Although
+              a cursed image, it remains cultural.
+              In Mexico, piñatas are a traditional decoration and activity for nearly any joyful celebration, including
+              birthdays and New Years. Traditionally,
+              they are paper mâché, cardboard, and wire constructions in the shape of stars with ribbons hanging down
+              from the tips. However, they have been
+              modernized and now often depict characters, animals, objects, and various pop culture figures, and come in
+              a variety of colors. During a
+              celebration, one person fills the piñata with candy or gifts and keeps it hung on a string above the
+              guests' heads, and the guests take turns
+              hitting it with a broomstick until the candy spills out, which they then collect. Carlos hit this piñata a
+              bit too hard and it flew right off
+              the string with its head off, but after re-hanging it and a few more turns, candy spilled out as planned."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Pizzelle.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Josh Oberly</h1>
+            <br>
+            <p>"I have made an Italian dessert called a pizzelle that my Italian grandmother often makes. It is a cookie
+              that uses anise (similar in taste to
+              liquorice but better) for flavor, and cooked in a tiny waffle iron device where it is pressed thin."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video controls>
+          <source src="media/Gallery/Videos/Anika.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <div class="text">
+            <h1>Anika Huang</h1>
+            <br>
+            <p>"This is a TikTok that my sister and I made to celebrate a bit of our culture. I am Chinese and the
+              outfit that I am wearing (in the last part
+              of the video) is a cheongsam/qipao, a traditional Chinese dress. It was originally popularized by the
+              Manchus during the Qing dynasty and at the
+              time was called changpao. It was generally a fairly loose fit that hung in an A-line shape. It has since
+              been modernized and adapted to a tighter
+              fit and a higher slit. This new version was popularized by celebrities and high class members of society.
+              Today, many versions of this traditional
+              dress can be found. Most of them feature a delicate floral pattern, but there are many alternative designs
+              from solid colors to polka dots to
+              anything in between. It is an extremely popular article of clothing during festive seasons like the Lunar
+              New Year and a typical garment worn
+              by the bride during at least a part of her wedding."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video controls>
+          <source src="media/Gallery/Videos/Annie.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <div class="text">
+            <h1>Annie Liu</h1>
+            <br>
+            <p>"In this video for the dance titled Remembrance I am using a fan a traditional Chinese prop in art forms
+              including opera and acrobatics. Chinese
+              dance costumes in the modern day vary widely, and a common type consists of loose fitting pants and a top
+              while others are more elaborate and
+              consist of multi-layer dresses/parts. Due to Westernization there has been a delicious mixing of ballet
+              and Chinese dance, hip hop, and such and
+              we shall look forward to what the future brings!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video controls>
+          <source src="media/Gallery/Videos/Genevieve.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <div class="text">
+            <h1>Genevieve Lee</h1>
+            <br>
+            <p>"In the United States, the wintertime festivities come to a close after New Years, but in Spain, this is
+              not the case, as kids eagerly await the
+              arrival of los reyes magos, or the three kings on January 6th. It is believed that this is the day that
+              the three wise men, called Gaspar,
+              Baltasar, and Melchor in Spanish, visited baby Jesus and gave him gifts. The festivities begin on January
+              5th, and the streets become filled with
+              people, as they observe the parade processions and await the calbagatas de los reyes magos, which are huge
+              floats that show reenactments of each
+              of the three kings. The procession also includes musicians and other cabalgatas with children who throw
+              candy and goodies into the crowd. Later
+              , on the evening of January 6th, children lay out food for the reyes magos to eat and also leave their
+              shoes out for the reyes magos to put
+              candy in."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Romanian_Clothes.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Stefan Cehan</h1>
+            <br>
+            <p>"This is traditional Romanian folk clothing. Traditional male clothing consists of white pants tucked
+              into boots along with an embroidered sash
+              and shirt with a conic woolen cap. Females traditionally wear an embroidered white petticoat over a wrap
+              skirt in addition to an embroidered blouse
+              and scarf which is worn around the head."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Romanian_Costume.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Daria Cara</h1>
+            <br>
+            <p>"This is me in my traditional Romanian costume, consisting of an ie (shirt), fotă (skirt), maramă (head
+              covering), and brâu (belt / wrap). This
+              is the traditional fashion I would have worn to Worldfest, so I am glad to be able to share it digitally."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Tunkul.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Diego Montemayor</h1>
+            <br>
+            <p>"This is the tunkul, or teponaztli, an Aztec and Mayan slit drum made from a hollowed out wooden log that
+              is hit with small drumsticks. This
+              version is especially extravagant but it can be a simple as a cylindrical, hollow log with slits. It is
+              played by hitting the log on the least
+              fixed points, which is why there are slits, producing a louder sound than a typical log would.
+              Historically, it is typically played in dances
+              and performances, and I have personally played it at the world festival at Centennial Lane Elementary
+              School when I was in 4th grade."</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/Gallery/Yut.jpeg" class="d-block w-100">
+        <div class="overlay">
+          <div class="text">
+            <h1>Joohee Na</h1>
+            <br>
+            <p>"These wooden sticks may not seem much, but looks can be very deceiving— known as “Yut Nori”, this is a
+              traditional Korean game played during
+              New Years. First introduced all the way back in 57 BC, its value and entertainment still maintains in the
+              21st century. My family has our own
+              tradition to play this during New Years and it’s very fun!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#gallery_carousel_2020" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+</body>
+
 </html>
