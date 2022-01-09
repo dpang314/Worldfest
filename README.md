@@ -2,5 +2,5 @@
 
 Videos don't show up in test site gallery because they are stored in Git LFS.
 
-Test site: https://david31415926.github.io/Worldfest2021/ <br/>
-Official site: http://worldfest.chsnhs.org/index.html
+Test site: https://dpang314.github.io/Worldfest/ <br/>
+Official site: http://chsnhs.org/worldfest/index.html
