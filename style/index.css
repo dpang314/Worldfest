@@ -1,0 +1,35 @@
+.background {
+  background-image: url('../media/background.png');
+  background-color:#bed0ff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+}
+
+.content {
+  color: #004aad; 
+  text-align: center;
+}
+
+#box {
+  background-color: #6fc2ff;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+}
+
+#box > h1 {
+  font-size: 5vh;
+}
+
+#box > h2 {
+  font-size: 3vh;
+}
+
+#banner {
+  height: 50vh;
+  margin: 15vh auto 0;
+  display: block;
+}
