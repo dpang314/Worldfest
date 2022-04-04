@@ -157,6 +157,11 @@ table td:nth-child(2) { text-align:end;}
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  #map {
+    font-size: 2vh;
+  }
+
 #maps {
   margin-bottom: 10px;
 }
