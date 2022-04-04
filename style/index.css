@@ -33,21 +33,12 @@ html {
   font-weight: 400;
 }
 
-#schedule-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  padding-top: 75px;
-  color: #004aad;
-}
-
 .line {
   border-bottom: 1px solid #004aad;
 }
 
-#schedule td {
-  font-size: 2.5vh;
+.box td {
+  font-size: 2vh;
   font-weight: 500;
   padding-left: 15px;
   padding-right: 15px;;
@@ -56,6 +47,7 @@ html {
 }
 
 #schedule {
+  width: 100%;
   margin: 0 !important;
   padding: 100px;
 }
@@ -152,9 +144,27 @@ table td:nth-child(2) { text-align:end;}
   color: black;
 }
 
+.divider-title {
+  font-size: 3vh;
+}
+
 #map {
+  color: black;
+  font-size: 1.3vh;
   padding-top: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#maps {
+  margin-bottom: 10px;
+}
+
+.map-tab-image {
+  max-width: 90vw;
+}
+
+#maps a {
+  color: black;
 }

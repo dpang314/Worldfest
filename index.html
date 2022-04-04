@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style/main.css">
     <script type="text/javascript" src="scripts/index.js"></script>
   </head>
-  <body class="background">
+  <body id="top" class="background">
     <nav class="navbar navbar-expand-lg navTransparent sticky-top navbar-light">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#schedule-section">Schedule</a>
+              <a class="nav-link" href="#top">Schedule</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#map">Map</a>
@@ -39,6 +39,21 @@
       <div class="box">
         <h1>April 6th 4:00pm-8:00pm</h1>
         <h2>Location: Centennial High School</h2>
+        <table id="schedule">
+          <hr>
+          <tr>
+            <td>Food</td>
+            <td>4-6 PM</td>
+          </tr>
+          <tr>
+            <td>Workshops</td>
+            <td>6-7 PM</td>
+          </tr>
+          <tr>
+            <td>Talent/Fashion Show</td>
+            <td>7-8 PM</td>
+          </tr>
+        </table>
       </div>
 
       <div id="buttons">
@@ -51,58 +66,45 @@
       </div>
     </div>
 
-    <div id="schedule-section">
-      <h2>Schedule</h2>
-      <hr class="divider">
-      <table id="schedule">
-        <tr class="line">
-          <td>Food</td>
-          <td>4-6 PM</td>
-        </tr>
-        <tr class="line">
-          <td>Workshops</td>
-          <td>6-7 PM</td>
-        </tr>
-        <tr>
-          <td>Talent/Fashion Show</td>
-          <td>7-8 PM</td>
-        </tr>
-      </table>
-    </div>
-
     <div id="map">
-      <h2>Map</h2>
+      <h2 class="divider-title">Map</h2>
       <hr class="divider">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active">Illegal Scribbles</a>
+      <ul id="maps" class="nav nav-tabs" role="tablist">
+        <li class="nav-item active" role="presentation">
+          <a class="nav-link active" id="101-tab" data-bs-toggle="tab" data-bs-target="#map-101" type="button" role="tab" aria-controls="home" aria-selected="true">Korean Alphabet (101)</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link">Korean Alphabet</a>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="103-tab" data-bs-toggle="tab" data-bs-target="#map-103" type="button" role="tab" aria-controls="home" aria-selected="false">Kpop (103)</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link">Kpop</a>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="201-tab" data-bs-toggle="tab" data-bs-target="#map-201" type="button" role="tab" aria-controls="home" aria-selected="false">Green Club Trivia (201)</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link">Green Club Trivia</a>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="202-tab" data-bs-toggle="tab" data-bs-target="#map-202" type="button" role="tab" aria-controls="home" aria-selected="false">Papel Picado (202)</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link">Papel Picado</a>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="702-tab" data-bs-toggle="tab" data-bs-target="#map-702" type="button" role="tab" aria-controls="home" aria-selected="false">Steel Drums (702)</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link">Theatre of the Oppressed</a>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="703-tab" data-bs-toggle="tab" data-bs-target="#map-703" type="button" role="tab" aria-controls="home" aria-selected="false">Theatre of the Oppressed (703)</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link">Steel Drums</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Ballet</a>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="803-tab" data-bs-toggle="tab" data-bs-target="#map-803" type="button" role="tab" aria-controls="home" aria-selected="false">Ballet (803)</a>
         </li>
       </ul>
+      <div class="tab-content" id="map-tab-image">
+        <div class="tab-pane fade show active" id="map-101" role="tabpanel" aria-labelledby="101-tab"><img id="map-tab-image" src="./media/map/101.png"/></div>
+        <div class="tab-pane fade" id="map-103" role="tabpanel" aria-labelledby="103-tab"><img class="map-tab-image" src="./media/map/103.png"/></div>
+        <div class="tab-pane fade" id="map-201" role="tabpanel" aria-labelledby="201-tab"><img id="map-tab-image" src="./media/map/201.png"/></div>
+        <div class="tab-pane fade" id="map-202" role="tabpanel" aria-labelledby="202-tab"><img id="map-tab-image" src="./media/map/202.png"/></div>
+        <div class="tab-pane fade" id="map-702" role="tabpanel" aria-labelledby="702-tab"><img id="map-tab-image" src="./media/map/702.png"/></div>
+        <div class="tab-pane fade" id="map-703" role="tabpanel" aria-labelledby="703-tab"><img id="map-tab-image" src="./media/map/703.png"/></div>
+        <div class="tab-pane fade" id="map-803" role="tabpanel" aria-labelledby="803-tab"><img id="map-tab-image" src="./media/map/803.png"/></div>
+      </div>
     </div>
 
     <div id="gallery">
-      <h2>Gallery</h2>
+      <h2 class="divider-title">Gallery</h2>
       <hr class="divider">
       <div class="row">
         <div class="column">
